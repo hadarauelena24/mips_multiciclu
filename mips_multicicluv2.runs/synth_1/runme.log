@@ -1,0 +1,585 @@
+
+*** Running vivado
+    with args -log top_env.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_env.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source top_env.tcl -notrace
+Command: synth_design -top top_env -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1144 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 282.367 ; gain = 72.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_env' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/top_env.vhd:43]
+INFO: [Synth 8-3491] module 'monoimpuls' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/monoimpuls.vhd:36' bound to instance 'MPGW' of component 'monoimpuls' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/top_env.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'monoimpuls' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/monoimpuls.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'monoimpuls' (1#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/monoimpuls.vhd:42]
+INFO: [Synth 8-3491] module 'monoimpuls' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/monoimpuls.vhd:36' bound to instance 'MPGR' of component 'monoimpuls' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/top_env.vhd:79]
+INFO: [Synth 8-3491] module 'mips_multi' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:34' bound to instance 'MIPS' of component 'mips_multi' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/top_env.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'mips_multi' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:46]
+INFO: [Synth 8-3491] module 'regPC' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regPC.vhd:34' bound to instance 'program_counter' of component 'regPC' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:228]
+INFO: [Synth 8-638] synthesizing module 'regPC' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regPC.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'regPC' (2#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regPC.vhd:43]
+INFO: [Synth 8-3491] module 'muxpc_mem' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/muxpc_mem.vhd:34' bound to instance 'instr_or_data' of component 'muxpc_mem' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'muxpc_mem' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/muxpc_mem.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'muxpc_mem' (3#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/muxpc_mem.vhd:41]
+INFO: [Synth 8-3491] module 'MEM' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MEM.vhd:36' bound to instance 'memory' of component 'MEM' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'MEM' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MEM.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (4#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MEM.vhd:47]
+INFO: [Synth 8-3491] module 'InstructionReg' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/InstructionReg.vhd:34' bound to instance 'instruction_register' of component 'InstructionReg' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'InstructionReg' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/InstructionReg.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'InstructionReg' (5#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/InstructionReg.vhd:43]
+INFO: [Synth 8-3491] module 'memDataReg' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/memDataReg.vhd:34' bound to instance 'memory_data_register' of component 'memDataReg' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:232]
+INFO: [Synth 8-638] synthesizing module 'memDataReg' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/memDataReg.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'memDataReg' (6#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/memDataReg.vhd:43]
+INFO: [Synth 8-3491] module 'ControlUnit' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/ControUnit.vhd:34' bound to instance 'UC' of component 'ControlUnit' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/ControUnit.vhd:45]
+INFO: [Synth 8-3491] module 'MicroSequencer' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MicroSequencer.vhd:34' bound to instance 'MS' of component 'MicroSequencer' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/ControUnit.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'MicroSequencer' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MicroSequencer.vhd:43]
+WARNING: [Synth 8-614] signal 'enR' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MicroSequencer.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'MicroSequencer' (7#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MicroSequencer.vhd:43]
+INFO: [Synth 8-3491] module 'bistD' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/bistD.vhd:34' bound to instance 'PC' of component 'bistD' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/ControUnit.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'bistD' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/bistD.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'bistD' (8#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/bistD.vhd:41]
+INFO: [Synth 8-3491] module 'MicroProgram' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MicroProgram.vhd:35' bound to instance 'MP' of component 'MicroProgram' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/ControUnit.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'MicroProgram' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MicroProgram.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'MicroProgram' (9#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MicroProgram.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (10#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/ControUnit.vhd:45]
+INFO: [Synth 8-3491] module 'muxregdst' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/muxregdst.vhd:34' bound to instance 'mux_reg_dst' of component 'muxregdst' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'muxregdst' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/muxregdst.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'muxregdst' (11#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/muxregdst.vhd:41]
+INFO: [Synth 8-3491] module 'mux_wrdata' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mux_wrdata.vhd:34' bound to instance 'mux_wr_data' of component 'mux_wrdata' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'mux_wrdata' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mux_wrdata.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mux_wrdata' (12#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mux_wrdata.vhd:41]
+INFO: [Synth 8-3491] module 'RF' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/RF.vhd:36' bound to instance 'register_file' of component 'RF' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'RF' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/RF.vhd:49]
+WARNING: [Synth 8-614] signal 'myRF' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/RF.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'RF' (13#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/RF.vhd:49]
+INFO: [Synth 8-3491] module 'regA' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regA.vhd:34' bound to instance 'registruA' of component 'regA' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:237]
+INFO: [Synth 8-638] synthesizing module 'regA' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regA.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'regA' (14#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regA.vhd:43]
+INFO: [Synth 8-3491] module 'regB' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regB.vhd:34' bound to instance 'registruB' of component 'regB' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'regB' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regB.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'regB' (15#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regB.vhd:43]
+INFO: [Synth 8-3491] module 'signext' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/signext.vhd:34' bound to instance 'sign_extend' of component 'signext' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/signext.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'signext' (16#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/signext.vhd:39]
+INFO: [Synth 8-3491] module 'EX' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/EX.vhd:36' bound to instance 'execution' of component 'EX' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'EX' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/EX.vhd:53]
+WARNING: [Synth 8-614] signal 'dif' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/EX.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'EX' (17#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/EX.vhd:53]
+INFO: [Synth 8-3491] module 'regALU' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regALU.vhd:34' bound to instance 'registruALU' of component 'regALU' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'regALU' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regALU.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'regALU' (18#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/regALU.vhd:43]
+INFO: [Synth 8-3491] module 'mux_srcpc' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mux_srcpc.vhd:34' bound to instance 'mux_pc_source' of component 'mux_srcpc' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'mux_srcpc' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mux_srcpc.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'mux_srcpc' (19#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mux_srcpc.vhd:42]
+WARNING: [Synth 8-614] signal 'pc' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'outmuxpc_mem' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'memData' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'instr' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'dataMem' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'wa' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'wdReg' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'a' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'b' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'ALUres' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'aluoutdata' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+WARNING: [Synth 8-614] signal 'zeroALU' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:244]
+INFO: [Synth 8-256] done synthesizing module 'mips_multi' (20#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/mips_multi.vhd:46]
+WARNING: [Synth 8-614] signal 'mips_out' is read in the process but is not in the sensitivity list [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/top_env.vhd:82]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/SSD.vhd:36' bound to instance 'sevsegdisp' of component 'SSD' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/top_env.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/SSD.vhd:46]
+INFO: [Synth 8-3491] module 'HEX7TOSEG' declared at 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/HEX7TOSEG.vhd:37' bound to instance 'seg' of component 'HEX7TOSEG' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/SSD.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'HEX7TOSEG' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/HEX7TOSEG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'HEX7TOSEG' (21#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/HEX7TOSEG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (22#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/SSD.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'top_env' (23#1) [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/top_env.vhd:43]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[31]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[30]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[29]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[28]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[27]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[26]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[25]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[24]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[23]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[22]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[21]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[20]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[19]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[18]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[17]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[16]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[15]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[14]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[13]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[12]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[11]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[10]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[9]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[8]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[7]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[6]
+WARNING: [Synth 8-3331] design MEM has unconnected port address[5]
+WARNING: [Synth 8-3331] design top_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design top_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design top_env has unconnected port btn[2]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[8]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[7]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[6]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 320.672 ; gain = 111.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 320.672 ; gain = 111.207
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 616.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 616.340 ; gain = 406.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 616.340 ; gain = 406.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 616.340 ; gain = 406.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "nextAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextAddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "nextAddr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "microMem" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "myRF_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myRF_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/EX.vhd:102]
+INFO: [Synth 8-5587] ROM size for "ALUctrl" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'outtemp_reg' [C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.srcs/sources_1/new/MEM.vhd:62]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 616.340 ; gain = 406.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 38    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	  17 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_env 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module monoimpuls 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module regPC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module muxpc_mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MEM 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module InstructionReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module memDataReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MicroSequencer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 9     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+Module bistD 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module MicroProgram 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input     20 Bit        Muxes := 1     
+Module muxregdst 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module mux_wrdata 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module regA 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module regB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module EX 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   8 Input     32 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+Module regALU 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux_srcpc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design top_env has unconnected port btn[4]
+WARNING: [Synth 8-3331] design top_env has unconnected port btn[3]
+WARNING: [Synth 8-3331] design top_env has unconnected port btn[2]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[15]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[14]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[13]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[12]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[11]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[10]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[9]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[8]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[7]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[6]
+WARNING: [Synth 8-3331] design top_env has unconnected port sw[5]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 616.340 ; gain = 406.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------------+-----------+----------------------+-----------------+
+|top_env     | MIPS/memory/RAM_reg | Implied   | 32 x 32              | RAM32X1S x 32   | 
++------------+---------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 620.484 ; gain = 411.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 621.492 ; gain = 412.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 658.688 ; gain = 449.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:31 . Memory (MB): peak = 658.688 ; gain = 449.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:31 . Memory (MB): peak = 658.688 ; gain = 449.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 658.688 ; gain = 449.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 658.688 ; gain = 449.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 658.688 ; gain = 449.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 658.688 ; gain = 449.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    15|
+|3     |LUT1     |    17|
+|4     |LUT2     |     8|
+|5     |LUT3     |    10|
+|6     |LUT4     |    28|
+|7     |LUT5     |    68|
+|8     |LUT6     |  1057|
+|9     |MUXF7    |   296|
+|10    |MUXF8    |     4|
+|11    |RAM32X1S |    32|
+|12    |FDCE     |     4|
+|13    |FDRE     |  1244|
+|14    |LDC      |    32|
+|15    |IBUF     |     8|
+|16    |OBUF     |    27|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------+---------------+------+
+|      |Instance                 |Module         |Cells |
++------+-------------------------+---------------+------+
+|1     |top                      |               |  2852|
+|2     |  MIPS                   |mips_multi     |  2762|
+|3     |    UC                   |ControlUnit    |   314|
+|4     |      MS                 |MicroSequencer |     5|
+|5     |      PC                 |bistD          |   309|
+|6     |    execution            |EX             |    12|
+|7     |    instruction_register |InstructionReg |   201|
+|8     |    memory               |MEM            |    64|
+|9     |    memory_data_register |memDataReg     |    32|
+|10    |    program_counter      |regPC          |    32|
+|11    |    register_file        |RF             |  1856|
+|12    |    registruA            |regA           |   120|
+|13    |    registruALU          |regALU         |    32|
+|14    |    registruB            |regB           |    99|
+|15    |  MPGR                   |monoimpuls     |     4|
+|16    |  MPGW                   |monoimpuls_0   |    49|
++------+-------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 658.688 ; gain = 449.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 658.688 ; gain = 153.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 658.688 ; gain = 449.223
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  LDC => LDCE: 32 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+148 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 658.688 ; gain = 449.223
+INFO: [Common 17-1381] The checkpoint 'C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.runs/synth_1/top_env.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 658.688 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 05 11:00:31 2023...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Dec 05 10:59:57 2023
+# Process ID: 23464
+# Current directory: C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.runs/synth_1
+# Command line: vivado.exe -log top_env.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_env.tcl
+# Log file: C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.runs/synth_1/top_env.vds
+# Journal file: C:/Users/elena/OneDrive/Desktop/facultate/an3/ssc/lab/mips_multicicluv2/mips_multicicluv2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_env.tcl -notrace
